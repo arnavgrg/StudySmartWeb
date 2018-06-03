@@ -92,6 +92,7 @@
 		  margin-right: 0px;
 		  text-align: center;
 		  width: 2em; 
+		  font-size: 25px;
 	}
 
 	span.circle:hover {
@@ -116,6 +117,11 @@
 	    font-size: 25px;
 	    transition: all 0.3s ease;
 	    margin-right: 1.5rem!important;
+	}
+
+	.featureHeader {
+		text-align: left; 
+		letter-spacing: 0.5px;
 	}
 
 	.featureDesc {
