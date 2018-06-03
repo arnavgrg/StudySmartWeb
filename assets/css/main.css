@@ -126,12 +126,13 @@
 	.featureHeader {
 		text-align: left; 
 		letter-spacing: 0.5px;
+		font-size: 1.5em;
 	}
 
 	.featureDesc {
 		text-align: justify; 
 		margin-top: -15px; 
-		font-size: 0.95em;
+		font-size: 1.1em;
 	}
 
 	.homescreen {
