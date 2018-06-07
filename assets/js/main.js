@@ -42,7 +42,6 @@
 			});
 
 		// Banner
-
 			if ($banner.length > 0) {
 
 				// IE: Height fix.
@@ -67,7 +66,6 @@
 
 
 		// Get BG Image
-
 			if ( $( ".bg-img" ).length ) {
 
 				$( ".bg-img" ).each(function() {
@@ -83,7 +81,6 @@
 			}
 
 		// Posts
-
 			$( ".post" ).each( function() {
 				var p = $(this),
 					i = p.find('.inner'),
@@ -122,7 +119,6 @@
 
 		//JS for Slideshow
 			$("#slideshow > div:gt(0)").hide();
-
 				setInterval(function() { 
   					$('#slideshow > div:first')
     					.fadeOut(2000)
@@ -131,6 +127,8 @@
     					.end()
     					.appendTo('#slideshow');
 					},  4000);
+
+		//
 
 		});
 
