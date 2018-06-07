@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 		<link rel="stylesheet" href="./assets/css/main.css" />
+		<script src="./assets/js/main.js"></script>
 	</head>
 	<body>
 
@@ -29,7 +30,8 @@
 			</header>
 
 		<!-- Banner -->
-			<section class="wrapper post bg-img" data-bg="banner.png"> <!-- id="banner" -->
+			<section class="wrapper post bg-img" data-bg="banner.png" style="height: 100%;"> <!-- id="banner" -->
+				<div class="inner"></div>
 					<a href="#one" class="more">Learn More</a>
 			</section>
 
@@ -43,9 +45,25 @@
 									<h2>What Is StudySmart?</h2>
 								</header>
 							</div>
+							<!-- Slideshow -->
 							<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-								<img src="./images/homescreen.png" id="homescreen" width="350" height="500" >
+								<!-- <img src="./images/homescreen.png" id="homescreen" width="350" height="500" > -->
+								<div id="slideshow" style="margin-left: -20px; margin-bottom: 50px;">
+								   <div>
+								     <img src="./images/mockup/mockup1.png" class="mockupSlideshow">
+								   </div>
+								   <div>
+								     <img src="./images/mockup/mockup2.png" class="mockupSlideshow">
+								   </div>
+								   <div>
+								     <img src="./images/mockup/mockup3.png" class="mockupSlideshow">
+								   </div>
+								   <div>
+								     <img src="./images/mockup/mockup4.png" class="mockupSlideshow">
+								   </div>
+								</div>
 							</div> 
+							<!-- Static Text -->
 							<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12" style="margin-right: 0px;"> 
 								<div><br>
 									<p style="text-align: justify; font-size: 1.1em;">Making the trek to campus to study shouldnʼt be a logistical nightmare. But during midterm season and finals week, many students arrive at their favorite study spot disappointed by the lack of available seats. We built StudySmart to address this exact problem. </p>
