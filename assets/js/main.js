@@ -127,9 +127,6 @@
     					.end()
     					.appendTo('#slideshow');
 					},  4000);
-
-		//
-
 		});
 
 })(jQuery);

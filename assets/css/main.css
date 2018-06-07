@@ -5,14 +5,20 @@
 
 	/*Background: #4969df*/
 
-	@media only screen and (min-width: 320px) and (max-width: 768px) {
-  		#linksAlt {
-  			visibility: hidden;
+	@media only screen and (min-width: 320px) and (max-width: 800px) {
+  		#BurgerToggle {
+  			visibility: visible;
   		}
+  		#linkListView {
+			visibility: hidden;
+		}
 	}
 
-	@media only screen and (min-width: 768px) {
-		#linksAlt {
+	@media only screen and (min-width: 801px) {
+		#linkListView {
+			visibility: visible;
+		}
+		#BurgerToggle {
 			visibility: hidden;
 		}
 	}
@@ -3548,21 +3554,24 @@
 			-webkit-transition: color 0.2s ease-in-out;
 			-ms-transition: color 0.2s ease-in-out;
 			transition: color 0.2s ease-in-out;
-			display: inline-block;
+			display: block;
 			color: inherit;
 			text-decoration: none;
+			float: right;
 		}
 
 			#header > a[href="#menu"] {
 				text-decoration: none;
 				-webkit-tap-highlight-color: transparent;
-				background: rgba(255, 255, 255, 0.15);
+				background: rgb(100,100,100,0.85);
+				/*background: rgba(73, 105, 223, 1);*/
 				border-radius: 100%;
 				height: 2.5em;
 				width: 2.5em;
 				line-height: 2.5em;
 				color: #FFF;
 				text-align: center;
+				float: right;
 			}
 
 				#header > a[href="#menu"]:before {
@@ -3641,12 +3650,12 @@
 		-ms-transition: -ms-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		-webkit-overflow-scrolling: touch;
-		background: #f64242;
+		background-color: #f64242;
 		box-shadow: none;
 		color: #ffffff;
 		height: 100%;
 		max-width: 80%;
-		overflow-y: auto;
+		/*overflow-y: auto;*/
 		padding: 3em 2em;
 		position: fixed;
 		right: 0;
@@ -3654,6 +3663,8 @@
 		visibility: hidden;
 		width: 20em;
 		z-index: 10002;
+		padding-top: 11px;
+		float: right;
 	}
 
 		#menu > ul {
@@ -3671,7 +3682,7 @@
 
 					#menu > ul.links > li > a:not(.button) {
 						border: 0;
-						border-top: solid 1px rgba(255, 255, 255, 0.25);
+						border-top: solid 1.25px rgba(255, 255, 255, 0.25);
 						color: inherit;
 						display: block;
 						line-height: 3.5em;
@@ -3695,7 +3706,7 @@
 			transition: color 0.2s ease-in-out;
 			-webkit-tap-highlight-color: transparent;
 			border: 0;
-			color: #fbb5b5;
+			color: #4969df; /*#fbb5b5;*/
 			cursor: pointer;
 			display: block;
 			height: 3.25em;
