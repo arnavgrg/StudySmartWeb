@@ -5,3 +5,5 @@ To-Do:
 1. Implement CDN
 2. Implement CSS Image Sprites
 3. Replace index.html with index.min.html
+4. Improve resizing pictures in contact section
+   to allow images to be in the same line on resizing
